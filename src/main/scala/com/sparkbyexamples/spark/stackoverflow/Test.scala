@@ -7,8 +7,6 @@ object Test {
   def main(args: Array[String]): Unit = {
 
     val spark = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExample")
       .getOrCreate();
     import spark.sqlContext.implicits._
 

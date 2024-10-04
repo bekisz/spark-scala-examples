@@ -12,8 +12,6 @@ object RDDFromCSVFile {
     }
 
     val spark:SparkSession = SparkSession.builder()
-      .master("local[3]")
-      .appName("SparkByExample")
       .getOrCreate()
     val sc = spark.sparkContext
 

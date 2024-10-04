@@ -6,9 +6,7 @@ import org.apache.spark.sql.types.{ArrayType, IntegerType, StringType, StructTyp
 object PersonsXML {
 
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().master("local[1]")
-      .appName("SparkByExample")
-      .getOrCreate()
+    val spark = SparkSession.builder().getOrCreate()
 
     /*
     Read XML File

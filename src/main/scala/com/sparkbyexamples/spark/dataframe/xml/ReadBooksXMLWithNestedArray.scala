@@ -8,9 +8,7 @@ import org.apache.spark.sql.types.StructType
 object ReadBooksXMLWithNestedArray {
 
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().master("local[1]")
-      .appName("SparkByExample")
-      .getOrCreate()
+    val spark = SparkSession.builder().getOrCreate()
 
     val df = spark.sqlContext.read
       .format("com.databricks.spark.xml")

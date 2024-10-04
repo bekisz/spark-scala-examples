@@ -6,8 +6,7 @@ import org.apache.spark.sql.{SparkSession, functions}
 object ReadBooksXMLWithNestedArray {
 
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().master("local[1]")
-      .appName("SparkByExample")
+    val spark = SparkSession.builder()
       .getOrCreate()
 
     import spark.implicits._

@@ -6,8 +6,7 @@ object UDFDataFrame {
   def main(args:Array[String]): Unit = {
 
     val spark:SparkSession = SparkSession.builder()
-      .master("local[3]")
-      .appName("SparkByExample")
+
       .getOrCreate()
 
     val data = Seq(("2018/01/23",23),("2018/01/24",24),("2018/02/20",25))

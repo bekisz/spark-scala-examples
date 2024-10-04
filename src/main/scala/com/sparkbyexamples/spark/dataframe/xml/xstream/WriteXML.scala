@@ -9,8 +9,6 @@ object WriteXML {
   def main(args: Array[String]): Unit = {
 
     val spark:SparkSession = SparkSession.builder()
-      .master("local")
-      .appName("SparkByExample")
       .getOrCreate()
 
     val sc = spark.sparkContext

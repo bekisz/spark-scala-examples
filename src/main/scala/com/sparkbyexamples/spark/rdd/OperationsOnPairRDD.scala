@@ -9,8 +9,6 @@ object OperationsOnPairRDD {
   def main(args: Array[String]): Unit = {
 
     val spark = SparkSession.builder()
-      .appName("SparkByExample")
-      .master("local")
       .getOrCreate()
 
     spark.sparkContext.setLogLevel("ERROR")

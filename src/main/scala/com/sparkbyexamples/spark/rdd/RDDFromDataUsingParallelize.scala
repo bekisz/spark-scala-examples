@@ -8,8 +8,6 @@ object RDDFromDataUsingParallelize {
 
   def main(args: Array[String]): Unit = {
       val spark:SparkSession = SparkSession.builder()
-        .master("local[3]")
-        .appName("SparkByExample")
         .getOrCreate()
       val rdd:RDD[Int] = spark.sparkContext.parallelize(List(1,2,3,4,5))
       val rddCollect:Array[Int] = rdd.collect()

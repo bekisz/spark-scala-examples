@@ -7,8 +7,7 @@ import org.apache.spark.sql.types._
 object ReadBooksXMLWithNestedArrayStruct {
 
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().master("local[1]")
-      .appName("SparkByExample")
+    val spark = SparkSession.builder()
       .getOrCreate()
 
     val customSchema = StructType(Array(

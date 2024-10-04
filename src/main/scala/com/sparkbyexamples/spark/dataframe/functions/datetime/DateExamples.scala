@@ -8,8 +8,6 @@ object DateExamples {
   def main(args: Array[String]): Unit = {
 
     val spark:SparkSession = SparkSession.builder()
-      .master("local[3]")
-      .appName("SparkByExample")
       .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
     val data = Seq(("2019-01-23"),("2019-06-24"),("2019-09-20"))

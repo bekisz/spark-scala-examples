@@ -8,8 +8,6 @@ object SparkSessionTest {
 
 
     val spark = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExample")
       .getOrCreate();
     
     println("First SparkContext:")

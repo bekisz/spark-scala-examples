@@ -6,8 +6,6 @@ object SaveDataFrame {
 
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExample")
       .getOrCreate()
 
     val filePath = "C://000_Projects/opt/BigData/zipcodes.csv"

@@ -32,8 +32,6 @@ object DataFrameWithDSL2 {
     val data2 = Seq(departmentWithEmployees3,departmentWithEmployees4)
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExample")
       .getOrCreate()
 
     import spark.implicits._
