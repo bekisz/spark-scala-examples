@@ -6,8 +6,6 @@ import org.apache.spark.sql.SparkSession
 object RDDAccumulator extends App {
 
   val spark = SparkSession.builder()
-    .appName("SparkByExample")
-    .master("local")
     .getOrCreate()
 
   val longAcc = spark.sparkContext.longAccumulator("SumAccumulator")

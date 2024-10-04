@@ -8,8 +8,6 @@ import scala.collection.mutable
 object RDDActions extends App {
 
   val spark = SparkSession.builder()
-    .appName("SparkByExample")
-    .master("local")
     .getOrCreate()
 
   spark.sparkContext.setLogLevel("ERROR")

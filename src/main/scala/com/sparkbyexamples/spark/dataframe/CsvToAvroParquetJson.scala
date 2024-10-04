@@ -5,8 +5,6 @@ import org.apache.spark.sql.{SaveMode, SparkSession}
 object CsvToAvroParquetJson extends App {
 
   val spark: SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExample")
     .getOrCreate()
 
   spark.sparkContext.setLogLevel("ERROR")

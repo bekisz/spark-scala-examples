@@ -8,8 +8,6 @@ object OperationOnPairRDDComplex extends App{
 
 
   val spark = SparkSession.builder()
-    .appName("SparkByExample")
-    .master("local")
     .getOrCreate()
 
   spark.sparkContext.setLogLevel("ERROR")

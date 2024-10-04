@@ -5,8 +5,6 @@ import org.apache.spark.sql.SparkSession
 object RDDPrint extends App{
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExample")
     .getOrCreate()
   val dept = List(("Finance",10),("Marketing",20),
       ("Sales",30), ("IT",40))
