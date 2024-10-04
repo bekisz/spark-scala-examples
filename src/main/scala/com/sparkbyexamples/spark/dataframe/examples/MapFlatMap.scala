@@ -7,8 +7,7 @@ import org.apache.spark.sql.types.{ArrayType, StringType, StructType}
 object MapFlatMap extends App{
 
   val spark: SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   val data = Seq("Project Gutenberg’s",

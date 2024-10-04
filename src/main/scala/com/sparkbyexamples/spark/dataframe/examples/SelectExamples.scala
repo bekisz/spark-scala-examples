@@ -6,8 +6,7 @@ import org.apache.spark.sql.{Row, SparkSession}
 object SelectExamples extends App{
 
   val spark = SparkSession.builder
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   val data = Seq(("James","Smith","USA","CA"),

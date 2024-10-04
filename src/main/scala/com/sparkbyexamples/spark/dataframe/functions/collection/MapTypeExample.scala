@@ -6,8 +6,7 @@ import org.apache.spark.sql.types._
 object MapTypeExample extends App {
 
   val spark: SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   //Creating DF with MapType

@@ -7,8 +7,7 @@ object DataFrameComplex extends App {
 
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[5]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   val structureData = Seq(

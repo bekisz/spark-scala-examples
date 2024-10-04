@@ -6,8 +6,7 @@ import org.apache.spark.sql.functions.{current_date, current_timestamp, date_for
 object TimestampToString extends App {
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
   spark.sparkContext.setLogLevel("ERROR")
 

@@ -9,8 +9,7 @@ import org.apache.spark.sql.functions._
 object ArrayTypeExample extends App {
 
   val spark: SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
   import spark.implicits._
 

@@ -7,8 +7,7 @@ import org.apache.spark.sql.types.{DateType, LongType, TimestampType}
 object DateInMilli extends App{
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
   spark.sparkContext.setLogLevel("ERROR")
 

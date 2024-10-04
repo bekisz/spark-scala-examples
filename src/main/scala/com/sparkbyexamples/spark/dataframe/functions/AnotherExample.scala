@@ -8,9 +8,8 @@ class AnotherExample {
   def main(args:Array[String]):Unit= {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()
+
+        .getOrCreate()
 
     /**
       * Simple using columns list

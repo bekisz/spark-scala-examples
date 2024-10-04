@@ -7,8 +7,7 @@ import org.apache.spark.sql.types.{ArrayType, DataType, DataTypes}
 object SplitExample extends App{
 
   val spark = SparkSession.builder()
-    .appName("SparkByExamples.com")
-    .master("local")
+
     .getOrCreate()
 
   val data = Seq(("James, A, Smith","2018","M",3000),

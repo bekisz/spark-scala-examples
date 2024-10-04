@@ -5,8 +5,7 @@ import org.apache.spark.sql.functions._
 object CacheExample extends App {
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   //read csv with options

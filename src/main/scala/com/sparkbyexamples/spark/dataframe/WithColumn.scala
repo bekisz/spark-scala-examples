@@ -8,9 +8,8 @@ object WithColumn {
   def main(args:Array[String]):Unit= {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()
+
+        .getOrCreate()
 
     val dataRows = Seq(Row(Row("James;","","Smith"),"36636","M","3000"),
       Row(Row("Michael","Rose",""),"40288","M","4000"),

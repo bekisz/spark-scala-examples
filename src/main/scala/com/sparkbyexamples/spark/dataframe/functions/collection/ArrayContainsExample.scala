@@ -7,7 +7,7 @@ import org.apache.spark.sql.{Row, SparkSession}
 object ArrayContainsExample extends App {
 
   val spark = SparkSession.builder().appName("SparkByExamples.com")
-    .master("local[1]")
+
     .getOrCreate()
 
   val data = Seq(

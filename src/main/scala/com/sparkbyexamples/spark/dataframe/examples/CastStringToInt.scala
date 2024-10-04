@@ -5,9 +5,8 @@ import org.apache.spark.sql.SparkSession
 object CastStringToInt extends App {
 
   val spark = SparkSession.builder
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()
+
+        .getOrCreate()
 
   val simpleData = Seq(("James",34,"true","M","3000.6089"),
          ("Michael",33,"true","F","3300.8067"),

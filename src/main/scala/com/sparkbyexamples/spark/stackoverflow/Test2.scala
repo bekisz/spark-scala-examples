@@ -7,7 +7,7 @@ object Test2 {
 //  def main(args: Array[String]): Unit = {
 //
 //    val spark = SparkSession.builder()
-//      .master("local[1]")
+//
 //      .appName("SparkByExample")
 //      .getOrCreate();
 //

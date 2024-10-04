@@ -5,8 +5,7 @@ import org.apache.spark.sql.{SaveMode, SparkSession}
 object RepartitionExample extends App {
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[5]")
-    .appName("SparkByExamples.com")
+
 //    .config("spark.default.parallelism", "500")
     .getOrCreate()
 

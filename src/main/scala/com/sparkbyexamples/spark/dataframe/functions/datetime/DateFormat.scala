@@ -6,8 +6,7 @@ import org.apache.spark.sql.functions._
 object DateFormat extends App {
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
   spark.sparkContext.setLogLevel("ERROR")
 

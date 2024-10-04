@@ -22,11 +22,7 @@ object SparkContextExample extends App{
   println("Deploy Mode :"+spark.sparkContext.deployMode);
   println("Master :"+spark.sparkContext.master);
 
-  val sparkSession2 = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExample-test")
-    .getOrCreate();
-
+  val sparkSession2 = SparkSession.builder().getOrCreate();
   println("Second SparkContext:")
   println("APP Name :"+sparkSession2.sparkContext.appName);
   println("Deploy Mode :"+sparkSession2.sparkContext.deployMode);

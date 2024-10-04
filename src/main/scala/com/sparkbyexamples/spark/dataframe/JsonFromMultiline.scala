@@ -5,8 +5,7 @@ import org.apache.spark.sql.SparkSession
 object JsonFromMultiline extends App {
 
   val spark: SparkSession = SparkSession.builder()
-    .master("local[3]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   //read multiline json file

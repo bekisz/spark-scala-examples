@@ -5,8 +5,7 @@ import org.apache.spark.sql.{Row, SparkSession}
 
 object ArrayToColumn extends App {
 
-  val spark = SparkSession.builder().appName("SparkByExamples.com")
-    .master("local[1]")
+  val spark = SparkSession.builder()
     .getOrCreate()
 
   val arrayData = Seq(

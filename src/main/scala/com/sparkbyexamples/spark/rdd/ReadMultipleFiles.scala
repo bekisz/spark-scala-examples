@@ -7,9 +7,8 @@ object ReadMultipleFiles extends App {
   object ReadMultipleFiles extends App {
 
     val spark:SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()
+
+        .getOrCreate()
 
     spark.sparkContext.setLogLevel("ERROR")
 

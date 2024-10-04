@@ -8,8 +8,7 @@ object SliceArray extends App {
 
 
   val spark = SparkSession.builder()
-    .appName("SparkByExamples.com")
-    .master("local")
+
     .getOrCreate()
 
   val arrayStructureData = Seq(

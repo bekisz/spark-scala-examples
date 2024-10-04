@@ -7,7 +7,7 @@ import org.apache.spark.sql.types._
 
 object ArrayOfMapType extends App {
   val spark = SparkSession.builder().appName("SparkByExamples.com")
-    .master("local[1]")
+
     .getOrCreate()
 
   val arrayMapSchema = new StructType().add("name",StringType)

@@ -8,8 +8,7 @@ object litTypeLit extends App {
 
 
   val spark = SparkSession.builder()
-    .appName("sparkbyexamples.com")
-    .master("local")
+
     .getOrCreate()
 
   import spark.sqlContext.implicits._

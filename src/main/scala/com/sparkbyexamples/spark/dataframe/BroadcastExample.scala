@@ -5,8 +5,7 @@ import org.apache.spark.sql.SparkSession
 object BroadcastExample extends App{
 
   val spark = SparkSession.builder()
-    .appName("SparkByExamples.com")
-    .master("local")
+
     .getOrCreate()
 
   val states = Map(("NY","New York"),("CA","California"),("FL","Florida"))

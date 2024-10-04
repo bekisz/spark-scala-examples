@@ -12,7 +12,7 @@ import scala.xml.XML
 
 object XmlRecordReader {
   def main(args: Array[String]): Unit = {
-    val sparkSession = SparkSession.builder.appName("XmlRecordReader").master("local").getOrCreate
+    val sparkSession = SparkSession.builder.appName("XmlRecordReader").getOrCreate
     val javaSparkContext = new JavaSparkContext(sparkSession.sparkContext)
     val configuration = new Configuration
     configuration.set("xmlinput.start", "<Rec>")

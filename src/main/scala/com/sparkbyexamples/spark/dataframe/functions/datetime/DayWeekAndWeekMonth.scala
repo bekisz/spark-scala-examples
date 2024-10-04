@@ -7,8 +7,7 @@ import org.apache.spark.sql.functions.{col, to_timestamp,date_format}
 object DayWeekAndWeekMonth extends App {
 
   val spark: SparkSession = SparkSession.builder()
-    .master("local")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
   spark.sparkContext.setLogLevel("ERROR")
 

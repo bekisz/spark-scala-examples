@@ -8,9 +8,8 @@ import org.apache.spark.sql.functions._
 object WindowGroupbyFirst extends App {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()
+
+        .getOrCreate()
 
     spark.sparkContext.setLogLevel("ERROR")
 

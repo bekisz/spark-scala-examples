@@ -5,9 +5,8 @@
 //object ForEachPartExample extends App {
 //
 //  val spark: SparkSession = SparkSession.builder()
-//    .master("local[1]")
-//    .appName("SparkByExamples.com")
-//    .getOrCreate()
+//
+////    .getOrCreate()
 //
 //  val data = Seq(("Banana",1000,"USA"), ("Carrots",1500,"USA"), ("Beans",1600,"USA"),
 //    ("Orange",2000,"USA"),("Orange",2000,"USA"),("Banana",400,"China"),

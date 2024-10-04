@@ -5,8 +5,7 @@ import org.apache.spark.sql.SparkSession
 object aggregateExample extends App {
 
   val spark = SparkSession.builder()
-    .appName("SparkByExamples.com")
-    .master("local[3]")
+
     .getOrCreate()
 
   spark.sparkContext.setLogLevel("ERROR")

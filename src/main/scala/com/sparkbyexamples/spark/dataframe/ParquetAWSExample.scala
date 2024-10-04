@@ -7,9 +7,8 @@ object ParquetAWSExample {
   def main(args:Array[String]):Unit= {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()
+
+        .getOrCreate()
     spark.sparkContext
       .hadoopConfiguration.set("fs.s3a.access.key", "AKIA3EEY5YGIE4JSQJZU")
     spark.sparkContext

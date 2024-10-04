@@ -6,8 +6,7 @@ import org.apache.spark.sql.SparkSession
 object ReadMultipleCSVFiles extends App {
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   spark.sparkContext.setLogLevel("ERROR")

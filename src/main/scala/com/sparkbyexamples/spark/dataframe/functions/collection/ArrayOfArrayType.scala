@@ -7,7 +7,7 @@ import org.apache.spark.sql.types.{ArrayType, StringType, StructType}
 object ArrayOfArrayType extends App {
 
   val spark = SparkSession.builder().appName("SparkByExamples.com")
-    .master("local[1]")
+
     .getOrCreate()
 
   val arrayArrayData = Seq(

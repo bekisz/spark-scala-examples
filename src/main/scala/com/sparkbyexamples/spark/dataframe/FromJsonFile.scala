@@ -8,9 +8,8 @@ object FromJsonFile {
   def main(args:Array[String]): Unit = {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[3]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()
+
+        .getOrCreate()
     val sc = spark.sparkContext
 
     //read json file into dataframe

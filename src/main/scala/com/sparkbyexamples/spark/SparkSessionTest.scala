@@ -16,8 +16,8 @@ object SparkSessionTest {
     println("Master :"+spark.sparkContext.master);
 
     val sparkSession2 = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExample-test")
+
+
       .getOrCreate();
 
     println("Second SparkContext:")

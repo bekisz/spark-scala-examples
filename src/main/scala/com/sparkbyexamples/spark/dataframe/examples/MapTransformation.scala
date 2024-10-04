@@ -6,8 +6,7 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructType,ArrayType
 object MapTransformation extends App{
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[5]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   val structureData = Seq(

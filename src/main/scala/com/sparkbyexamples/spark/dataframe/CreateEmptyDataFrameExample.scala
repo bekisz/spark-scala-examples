@@ -6,9 +6,8 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructT
   object CreateEmptyDataFrameExample extends App {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate()
+
+        .getOrCreate()
     import spark.implicits._
 
 

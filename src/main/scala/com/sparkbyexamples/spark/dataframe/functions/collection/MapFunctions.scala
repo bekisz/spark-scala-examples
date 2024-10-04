@@ -9,8 +9,7 @@ import scala.collection.mutable
 object MapFunctions extends App {
 
   val spark: SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
   import spark.implicits._
 

@@ -7,8 +7,7 @@ import org.apache.spark.sql.types.IntegerType
 object AddColumn extends App {
 
   val spark = SparkSession.builder()
-    .appName("SparkByExamples.com")
-    .master("local")
+
     .getOrCreate()
 
   import spark.sqlContext.implicits._

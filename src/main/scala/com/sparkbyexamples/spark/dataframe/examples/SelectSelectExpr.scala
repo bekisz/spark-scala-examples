@@ -5,8 +5,7 @@ import org.apache.spark.sql.functions.col
 object SelectSelectExpr extends App {
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   val data = Seq(("Java", "20000"), ("Python", "100000"), ("Scala", "3000"))

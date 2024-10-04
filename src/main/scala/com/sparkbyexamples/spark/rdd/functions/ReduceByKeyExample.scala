@@ -5,8 +5,7 @@ import org.apache.spark.sql.SparkSession
 object ReduceByKeyExample extends App{
 
   val spark: SparkSession = SparkSession.builder()
-    .master("local[1]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   val data = Seq(("Project", 1),

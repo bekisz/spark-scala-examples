@@ -6,8 +6,7 @@ import org.apache.spark.sql.functions.{col,hour,minute,second}
 object GetTimeFromTimestamp extends App {
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
   spark.sparkContext.setLogLevel("ERROR")
 

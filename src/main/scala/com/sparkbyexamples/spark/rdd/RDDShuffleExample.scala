@@ -6,8 +6,7 @@ import org.apache.spark.sql.SparkSession
 object RDDShuffleExample extends App {
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[5]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   val sc = spark.sparkContext

@@ -9,8 +9,7 @@ import org.apache.spark.sql.{SaveMode, SparkSession}
 object SaveSingleFile extends App{
 
   val spark:SparkSession = SparkSession.builder()
-    .master("local[3]")
-    .appName("SparkByExamples.com")
+
     .getOrCreate()
 
   val df = spark.read.option("header",true)

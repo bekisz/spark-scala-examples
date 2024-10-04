@@ -8,7 +8,7 @@ object CreateDataFrame {
   def main(args:Array[String]):Unit={
 
     val spark:SparkSession = SparkSession.builder()
-      .master("local[1]").appName("SparkByExamples.com")
+  .appName("SparkByExamples.com")
       .getOrCreate()
 
     import spark.implicits._
